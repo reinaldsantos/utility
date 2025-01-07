@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilitários</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+         
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Certifique-se que ocupa toda a altura da tela */
+            background-image: url('https://www.pcguia.pt/wp-content/uploads/2024/06/open-source.jpg');
+            background-size: cover; /* Garante que o GIF cubra toda a tela sem distorcer */
+        }
+        h1 {
+            color: #e0e0e0;
+            text-align: center; /* Centraliza o título */
+            margin-bottom: 20px; /* Espaço abaixo do título */
+        }
+        h2, h3 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 10px; /* Diminui a margem entre os cards */
+            padding: 15px; /* Diminui o padding interno */
+            width: 250px; /* Diminui a largura dos cards */
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #e0e0e0;
+            text-align: center; /* Centraliza o texto */
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #007BFF; /* Cor do título */
+            font-size: 1.2em; /* Ajusta o tamanho da fonte do título */
+        }
+        .card img {
+            max-width: 100%; /* Faz a imagem ocupar toda a largura do card */
+            border-radius: 5px; /* Arredonda os cantos da imagem */
+            margin-bottom: 10px; /* Espaço abaixo da imagem */
+        }
+        .intro-card {
+            background: #e7f3fe; /* Cor de fundo para o card de introdução */
+            border: 1px solid #b3d7ff; /* Borda azul clara */
+            color: #333;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%; /* Largura total para o card de introdução */
+            max-width: 800px; /* Largura máxima */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(20px); /* Move o card para baixo */
+            animation: fadeInUp 0.5s forwards; /* Animação de entrada */
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card, .intro-card {
+                width: 90%; /* Largura responsiva em telas menores */
+            }
+        }
+
+        .div{
+            text-align: center;
+        }
+        .intro-card p, .intro-card ul li {
+            color: rgb(0, 0, 0); /* Cor do texto dentro dos cards para branco */
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1; /* Torna o card visível */
+                transform: translateY(0); /* Move o card para sua posição original */
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px; /* Diminui o padding em telas menores */
+            }
+
+            .intro-card {
+                padding: 15px; /* Diminui o padding interno do card em telas menores */
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+  
+    <h1>O que é Utilitários</h1>
+    <div class="intro-card" style="text-align: center; margin: 0 auto; max-width: 600px;">
+        <p>Um utilitário é um programa que auxilia os utilizadores em tarefas diárias, simplificando e automatizando processos.</p>
+    </div>
+    
+    <h1>Funções dos Softwares Utilitários</h1>
+    <div class="container">
+        <div class="intro-card" style="max-width: 600px; margin: 10px auto;"> <!-- Diminuída a largura máxima e ajustada a margem -->
+            <ul>
+                <li>Melhorar o desempenho do sistema.</li>
+                <li>Facilitar tarefas específicas.</li>
+                <li>Proteger a privacidade e segurança.</li>
+                <li>Gerir recursos de hardware.</li>
+            </ul>
+            <p>Esses programas ajudam a manter o sistema funcionando de maneira eficiente e segura.</p>
+        </div>
+    </div>
+   
+        <h1>Quais são os 4 Tipos de Software</h1>
+        <div class="container">
+            <div class="card">
+                <h2>Software de Sistema</h2>
+                <img src="https://www.bitbook.pt/wp-content/uploads/2023/09/introduccion-sistemas-operativos.jpeg"
+                <p>Programas que gerem o hardware e fornecem uma plataforma para os outros softwares.</p>
+                <h4>Exemplos: Windows, Linux, macOS.</h4>
+            </div>
+
+            <div class="card">
+                <h2>Software de Aplicação</h2>
+                <img src="https://so10simao.wordpress.com/wp-content/uploads/2013/09/office-2013-onehome-white1.jpg" alt="Software de Aplicação">
+                <p>Programas projetados para realizar tarefas específicas para o utilizador.</p>
+                <h4>Exemplos: Microsoft Word, Excel, Chrome.</h4>
+            </div>
+
+            <div class="card">
+                <h2>Software de Programação</h2>
+                <img src="https://blog.casadodesenvolvedor.com.br/wp-content/uploads/2023/12/image2.png" alt="Software de Programação">
+                <p>Ferramentas usadas para desenvolver outros softwares.</p>
+                <h4>Exemplos: Visual Studio, Eclipse.</h4>
+            </div>
+
+            <div class="card">
+                <h2>Software Utilitário</h2>
+                <img src="https://cdn.open-pr.com/L/1/L121694229_g.jpg" alt="Software Utilitário">
+                <p>Programas que ajudam a manter ou otimizar o sistema.</p>
+                <h4>Exemplos: antivírus, desfragmentadores de disco.</h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+</html>
